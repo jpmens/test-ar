@@ -1,9 +1,9 @@
 all:
   hosts:
-      mailhost:
+      - mailhost:
   children:
       web:
           hosts:
-              www01:
-              www02:
+              - www01:
+              - www02:
                   tz: "Europe/Berlin"
